@@ -7,8 +7,64 @@
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
+  <h1>Mi Lista de Tareas <span id="nombre-estudiante" Tania> </span></h1>
+  <p>Nombre del estudiante: Tania Moreno</p>
+  <main>
+    <h2>Formulario de Tareas</h2>
+    <form id="formulario-tareas">
+      <div class="campo">
+        <label for="nombre">Nombre de su Tarea</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="campo">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required />
+      </div>
+
+      <div class="campo">
+        <label for="descripcion">Descripcion</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+      </div>
+      <div class="campo">
+        <label for="descripcion">Descripcion</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+      </div>
+      <div class="campo">
+        <label for="tipo">Categoria de Tarea</label>
+        <select id="tipo" name="tipo">
+          <option value="" disabled selected> Escoja una opcion</option>
+          <option value="Universidad"> Universidad</option>
+          <option value="Personal"> Personal</option>
+          <option value="Trabajo"> Trabajo</option>
+          <option value="Hobby"> Hobby</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label>Prioridad:</label>
+        <div class="Prioridad">
+          <label><input type="radio" name="Prioridad" value="Urgente" required> Urgente</label>
+          <label><input type="radio" name="Prioridad" value="Normal" required> Normal</label>
+          <label><input type="radio" name="Prioridad" value="Baja" required> Baja</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="aceptacion" name="aceptacion" required />
+          Acepto los <a href="/terminos" target="_blank">términos y condiciones</a>.
+        </label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Enviar</button>
+        <footer>
+          <p>Lindo día !! 😀 © 2025 Tania </p>
+        </footer>
+      </div>
+    </form>
+  </main>
+
 
   <!-- Aquí irá el formulario y la lista generada con JavaScript -->
 
